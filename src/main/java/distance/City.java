@@ -29,7 +29,4 @@ public class City {
         return city;
     }
 
-    public static void main(String[] args) {
-        System.out.println(parse("Aba,47.03433333,18.52483333"));
-    }
 }
