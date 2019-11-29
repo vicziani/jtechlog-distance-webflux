@@ -22,14 +22,12 @@ public class CityController {
                 .andRoute(RequestPredicates.GET("/api/cities/temperatures/{name}"), this::findByNameWithTemperature);
     }
 
-    @GetMapping
     public Mono<ServerResponse> findByName(ServerRequest request) {
         return ServerResponse
                 .ok()
                 .body(cityService.findByName(request.pathVariable("name")), City.class);
     }
 
-    @GetMapping("/temperatures")
     public Mono<ServerResponse> findByNameWithTemperature(ServerRequest request) {
         return ServerResponse
                 .ok()
