@@ -1,6 +1,8 @@
 package cities;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
@@ -9,6 +11,8 @@ import java.util.Scanner;
 
 @Data
 @Table("cities")
+@NoArgsConstructor
+@AllArgsConstructor
 public class City {
 
     @Id
