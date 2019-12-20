@@ -1,4 +1,4 @@
-package distance;
+package cities;
 
 import io.r2dbc.h2.H2ConnectionConfiguration;
 import io.r2dbc.spi.ConnectionFactory;
@@ -17,10 +17,10 @@ import java.io.InputStreamReader;
 @SpringBootApplication
 @EnableR2dbcRepositories
 @Slf4j
-public class DistanceApplication {
+public class CitiesApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DistanceApplication.class, args);
+        SpringApplication.run(CitiesApplication.class, args);
     }
 
     @Bean
@@ -42,7 +42,7 @@ public class DistanceApplication {
 
         try (var cities = new BufferedReader(
                 new InputStreamReader(
-                        DistanceApplication.class.getResourceAsStream("/cities.csv")))
+                        CitiesApplication.class.getResourceAsStream("/cities.csv")))
 				.lines()
                 .skip(1)
                 .map(City::parse)) {

@@ -1,4 +1,4 @@
-package distance;
+package cities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,10 +1,10 @@
-package distance;
+package cities;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DistanceApplicationTests {
+class CitiesApplicationTests {
 
 	@Test
 	void contextLoads() {
